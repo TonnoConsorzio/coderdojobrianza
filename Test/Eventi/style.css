@@ -1,0 +1,119 @@
+.contenitore {
+    font-family: "Roboto", sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    }
+    
+    .contenitore h3.anno {
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 1px solid #7AC7D9;
+    }
+    
+    .contenitore .eventi {
+    box-shadow: 0 4px 16px -8px #01591F;
+    display: flex;
+    border-radius: 8px;
+    margin: 32px 0;
+    }
+    
+    .eventi .dati {
+    background: #01732B;
+    min-width: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 0 0 8px;
+    }
+    
+    .eventi .dati .giorno {
+    font-size: 56px;
+    }
+    
+    .eventi .dati .mese {
+    font-size: 16px;
+    font-weight: normal;
+    }
+    
+    .eventi .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+    }
+    
+    .eventi .desc h3.event-title {
+    font-size: 24px;
+    margin: 24px 0 10px 0;
+    color: #218bbb;
+    text-transform: uppercase;
+    }
+    
+    .eventi .desc .orologio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 36px;
+    color: #fff;
+    background-color: #7AC7D9;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 14px;
+    }
+    
+    .prenota {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 36px;
+    background-color: #01591F;
+    color: #fff;
+    padding: 0 16px;
+    margin-left: 8px;
+    border-radius: 16px;
+    font-size: 14px;
+    }
+    
+    .eventi .desc .orologio img {
+    height: 20px;
+    padding-right: 8px;
+    }
+    
+    .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    
+    .info ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    }
+    
+    @media (max-width: 550px) {
+    .eventi {
+    flex-direction: column;
+    }
+    
+    .eventi .dati {
+    padding: 0;
+    border-radius: 8px 8px 0 0;
+    }
+    
+    .eventi .dati .date-eventi .giorno,
+    .eventi .dati .date-eventi .mese {
+    display: inline-block;
+    font-size: 24px;
+    }
+    
+    .eventi .dati .date-eventi {
+    padding: 10px 0;
+    }
+    }

@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.Contenitore{
+    width: 100%;
+    height: 100vh;
+    background: #ffff;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.modulo{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    box-shadow: 0 0 10px #01591f;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #ffff;
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+.modulo h1{
+    font-size:30px ;
+    margin-bottom: 60px;
+    color: #01732b;
+    position: relative;
+}
+.modulo h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #01732b;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.Input-bello{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+.Input-bello i{
+    margin-left: 15px;
+    color: #01732b;
+}
+form p{
+    text-align: left;
+    font-size: 13px;
+}
+form p a{
+    text-decoration: none;
+    color: #7ac7d9;
+}
+.bottone-carino{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.bottone-carino button{
+    flex-basis: 48%;
+    background: #7ac7d9;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+.Input-grande{
+    height: 250px;
+}
+.bottone-carino button.disabilita{
+    background-color: #eaeaea;
+    color: #999;
+}
+.indietro {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #016529;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    }
+    
+    .indietro:hover {
+    background-color: #005723;
+    }
+    
+    .indietro:hover i {
+    color: #fff;
+    font-size: 25px;
+    animation: pulse 1s infinite;
+    }
+
+    .indietro i {
+        color: #fff;
+        font-size: 25px
+    }
+    
+    @keyframes pulse {
+    0% {
+    transform: scale(1);
+    }
+    50% {
+    transform: scale(1.1);
+    }
+    100% {
+    transform: scale(1);
+    }
+    }

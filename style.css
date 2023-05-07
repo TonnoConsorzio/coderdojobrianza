@@ -1,0 +1,343 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    padding-left: 11%;
+    padding-right: 8%;
+    position: relative;
+
+    background-size: 38%;
+    background-repeat: no-repeat;
+    background-position: 92% 100%;
+}
+.top-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0 15px;
+    border-bottom:  1px solid #000000;
+}
+.top-nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.top-nav ul li a{
+    text-decoration: none;
+    color: #016529;
+    font-size: 15px;
+}
+.top-nav button{
+    background: #005723;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.side-nav {
+    position: fixed;
+    background: #016529;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    flex-direction: column;
+    padding: 10px 0;
+    background: linear-gradient(#016529, #81C9DC, #005723, #6D9DAD);
+    background-size: 100% 400%;
+    background-position: 0 0%;
+    transition: background-position 1s ease-out;
+}
+
+.side-nav:hover {
+    background-position: 0 100%;
+}
+
+.side-nav .logo {
+    scale: 80%;
+}
+
+.side-nav a {
+    text-decoration: none;
+    color: #fff;
+    transform: rotate(-90deg) translateX(50%);
+    width: 100px;
+}
+
+.text-box { display: inline-block; }
+
+.text-box{
+    margin-top: 20%;
+    font-size: 18px;
+    color: #016529;
+
+}
+.text-box h1{
+    font-weight: 500;
+    font-size: 86px;
+    line-height: 95px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    position: relative;
+}
+@keyframes cursor {
+    50% { border-color: transparent }
+}
+@keyframes typing {
+    from { width: 0 }
+}
+.text-box .icon{
+    background: #016529;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+}
+.text-box .icon img{
+    width: 15px;
+}
+.text-box h1::after{
+    content: '|';
+    position: absolute;
+    right: 0;
+    color: #016529;
+    background-color: #ffffff;
+    width: 100%;
+    animation: typing 3s alternate infinite,
+                line 1s infinite;
+}
+@keyframes typing{
+    to{
+        width: 0%;
+    }
+}
+@keyframes line {
+    50%{
+        color: transparent;
+    }
+}
+
+.contenitore {
+    font-family: "Roboto", sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    }
+    
+    .contenitore h3.anno {
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 1px solid #7AC7D9;
+    }
+    
+    .contenitore .eventi {
+    box-shadow: 0 4px 16px -8px #01591F;
+    display: flex;
+    border-radius: 8px;
+    margin: 32px 0;
+    }
+    
+    .eventi .dati {
+    background: #01732B;
+    min-width: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 0 0 8px;
+    }
+    
+    .eventi .dati .giorno {
+    font-size: 56px;
+    }
+    
+    .eventi .dati .mese {
+    font-size: 16px;
+    font-weight: normal;
+    }
+    
+    .eventi .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+    }
+    
+    .eventi .desc h3.evento-titolo {
+    font-size: 24px;
+    margin: 24px 0 10px 0;
+    color: #01732B;
+    text-transform: uppercase;
+    }
+    
+    .eventi .desc .orologio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 36px;
+    color: #fff;
+    background-color: #7AC7D9;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 14px;
+    }
+    
+    .prenota {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 36px;
+    background-color: #01591F;
+    color: #fff;
+    padding: 0 16px;
+    margin-left: 8px;
+    border-radius: 16px;
+    font-size: 14px;
+    cursor: pointer;
+    }
+    
+    .eventi .desc .orologio img {
+    height: 20px;
+    padding-right: 8px;
+    }
+    
+    .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    
+    .info ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    }
+    
+    @media (max-width: 550px) {
+    .eventi {
+    flex-direction: column;
+    }
+    
+    .eventi .dati {
+    padding: 0;
+    border-radius: 8px 8px 0 0;
+    }
+    
+    .eventi .dati .date-eventi .giorno,
+    .eventi .dati .date-eventi .mese {
+    display: inline-block;
+    font-size: 24px;
+    }
+    
+    .eventi .dati .date-eventi {
+    padding: 10px 0;
+    }
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    
+    }
+    body{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        background-color: #fff;
+    
+    }
+    
+    .footer {
+        padding: 40px 0;
+        background-color: #fff;
+    }
+    
+    .footer .social {
+        text-align: center;
+        padding-bottom: 25px;
+        color: #01732B;
+    }
+    
+    .footer .social a {
+        font-size: 24px;
+        color: inherit;
+        border: 1px solid #F3CB04;
+        width: 40px;
+        height: 40px;
+        line-height: 38px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        margin: 0 8px;
+        opacity: 0.75;
+    }
+    
+    .footer .social a:hover {
+        transform:  scale(1.2);
+        opacity: 0.9;
+    
+    }
+    
+    .footer ul {
+        margin-top: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 0;
+        text-align: center;
+        color: #7AC7D9;
+    }
+    
+    .footer ul a{
+        color: inherit;
+        text-decoration: none;
+        opacity: 0.8;
+    
+    }
+    
+    .footer ul li {
+        display: inline-block;
+        padding: 0 15px;
+    
+    }
+    
+    .footer ul li a:hover {
+        opacity: 1;
+    
+    }
+    
+    .footer .copyright {
+        margin-top: 20px;
+        text-align:  center;
+        font-size: 13px;
+    }
+    
+    .crediti  {
+        text-align: right;
+        margin-bottom: 20px;
+        background-color: #fff;
+        color: #ababab;
+    }

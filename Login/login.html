@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <Title>Login Coderdojo Brianza</Title>
+        <link rel="stylesheet" href="login.css">
+        <script src="https://kit.fontawesome.com/c796a9511f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="indietro">
+            <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>   
+        </div>
+        <div class="contenitore">
+            <div class="modulo">
+                <h1 id="titolo">Registrati</h1>
+                <form>
+                    <div class="Input-grande">
+                        <div class="Input-bello" id="nomedato">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" placeholder="Nome">
+                        </div>
+
+                        <div class="Input-bello">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" placeholder="Email">
+                        </div>
+
+                        <div class="Input-bello">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <p>Password Dimenticata? <a href="">Clicca qui</a></p>
+                    </div>
+                    <div class="bottone-carino">
+                        <button type="button" id="regbottone">Registrati</button>
+                        <button type="button" class="disabilita" id="logbottone">Accedi</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script>
+            let regbottone = document.getElementById("regbottone")
+            let logbottone = document.getElementById("logbottone")
+            let nomedato= document.getElementById("nomedato")
+            let titolo= document.getElementById("titolo")
+
+
+            logbottone.onclick = function (){
+                nomedato.style.maxHeight = "0";
+                titolo.innerHTML = "Accedi";
+                regbottone.classList.add("disabilita")
+                logbottone.classList.remove("disabilita")
+            }
+            regbottone.onclick = function (){
+                nomedato.style.maxHeight = "60px";
+                titolo.innerHTML = "Registrati";
+                regbottone.classList.remove("disabilita")
+                logbottone.classList.add("disabilita")
+            }
+        </script>
+    </body>
+</html>
